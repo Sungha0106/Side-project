@@ -1086,8 +1086,6 @@ end
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //out
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// assign out_wire = puzzle[blank_y[blank_counter]][blank_x[blank_counter]];
-
 always @(posedge clk or negedge rst_n)
 begin
     if(!rst_n)
