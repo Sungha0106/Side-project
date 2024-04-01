@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MAZE
+Version: T-2022.03
+Date   : Thu Mar 21 22:29:58 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: x_count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: y_count_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  x_count_reg[1]/CK (DFFRX1)               0.00       0.00 r
+  x_count_reg[1]/Q (DFFRX1)                0.56       0.56 f
+  U3840/Y (NOR2XL)                         0.29       0.84 r
+  U3537/Y (NAND2XL)                        0.14       0.98 f
+  U3841/Y (NAND2XL)                        0.14       1.12 r
+  U3517/Y (NOR2XL)                         0.09       1.21 f
+  U3857/Y (NAND3XL)                        0.43       1.65 r
+  U3351/Y (INVX1)                          0.35       2.00 f
+  U3627/Y (INVXL)                          0.67       2.67 r
+  U4265/Y (OAI22XL)                        0.15       2.81 f
+  U3362/Y (AOI211XL)                       0.23       3.04 r
+  U3363/Y (OAI211XL)                       0.12       3.17 f
+  U4269/Y (OAI21XL)                        0.19       3.36 r
+  U4270/Y (OAI211XL)                       0.12       3.48 f
+  U3659/Y (AOI211XL)                       0.20       3.68 r
+  U3667/Y (OAI211XL)                       0.12       3.80 f
+  U4284/Y (OAI211XL)                       0.13       3.92 r
+  U3676/Y (NAND4XL)                        0.14       4.06 f
+  U3682/Y (AOI211XL)                       0.26       4.32 r
+  U4430/Y (OAI21XL)                        0.11       4.43 f
+  U3542/Y (NAND2XL)                        0.13       4.55 r
+  U3540/Y (INVXL)                          0.10       4.66 f
+  U3602/Y (NOR2XL)                         0.32       4.97 r
+  U5283/Y (AOI2BB2X1)                      0.12       5.09 f
+  U5284/Y (OA22X1)                         0.35       5.44 f
+  U5285/Y (OAI31XL)                        0.10       5.54 r
+  y_count_reg[4]/D (DFFRX1)                0.00       5.54 r
+  data arrival time                                   5.54
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  y_count_reg[4]/CK (DFFRX1)               0.00      10.00 r
+  library setup time                      -0.26       9.74
+  data required time                                  9.74
+  -----------------------------------------------------------
+  data required time                                  9.74
+  data arrival time                                  -5.54
+  -----------------------------------------------------------
+  slack (MET)                                         4.20
+
+
+1

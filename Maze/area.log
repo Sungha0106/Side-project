@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : MAZE
+Version: T-2022.03
+Date   : Thu Mar 21 22:29:58 2024
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                            7
+Number of nets:                          3764
+Number of cells:                         3429
+Number of combinational cells:           3045
+Number of sequential cells:               384
+Number of macros/black boxes:               0
+Number of buf/inv:                        132
+Number of references:                      44
+
+Combinational area:              21465.320549
+Buf/Inv area:                      458.297993
+Noncombinational area:           12377.440384
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 33842.760932
+Total area:                 undefined
+1

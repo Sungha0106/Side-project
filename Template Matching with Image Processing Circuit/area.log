@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : TMIP
+Version: T-2022.03
+Date   : Tue Mar 26 19:44:46 2024
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+    USERLIB (File: /home/lab911_1/Desktop/7112064132/Iclab_2021_Fall/ICLAB_05/RA2SH.db)
+
+Number of ports:                         1805
+Number of nets:                         73658
+Number of cells:                        66310
+Number of combinational cells:          61811
+Number of sequential cells:              4453
+Number of macros/black boxes:               1
+Number of buf/inv:                       7674
+Number of references:                     147
+
+Combinational area:             624965.696702
+Buf/Inv area:                    43967.751557
+Noncombinational area:          143708.668755
+Macro/Black Box area:           229834.625000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                998508.990457
+Total area:                 undefined
+1

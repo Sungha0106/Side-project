@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HD
+Version: T-2022.03
+Date   : Sat Feb 24 20:04:00 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: code_word2[3]
+              (input port)
+  Endpoint: out_n[5] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  code_word2[3] (in)                                      0.00       0.00 r
+  U230/Y (CLKXOR2X2)                                      0.25       0.25 f
+  U229/Y (CLKXOR2X2)                                      0.26       0.50 f
+  U228/Y (CLKXOR2X2)                                      0.33       0.84 f
+  U199/Y (AND2X4)                                         0.18       1.02 f
+  U197/Y (CLKMX2X4)                                       0.15       1.17 f
+  U196/Y (AO21X2)                                         0.22       1.39 f
+  U190/Y (CLKMX2X4)                                       0.17       1.56 f
+  U189/Y (AOI2BB1X2)                                      0.08       1.64 r
+  U188/Y (CLKXOR2X2)                                      0.33       1.97 f
+  U172/Y (CLKXOR2X2)                                      0.27       2.24 f
+  DP_OP_17J1_122_3460/U7/CO (CMPR32X2)                    0.30       2.54 f
+  DP_OP_17J1_122_3460/U6/CO (CMPR32X2)                    0.31       2.84 f
+  DP_OP_17J1_122_3460/U5/CO (CMPR32X2)                    0.31       3.15 f
+  DP_OP_17J1_122_3460/U4/CO (CMPR32X2)                    0.31       3.46 f
+  DP_OP_17J1_122_3460/U3/CO (CMPR32X2)                    0.31       3.76 f
+  U159/Y (CLKXOR2X2)                                      0.20       3.97 f
+  U158/Y (CLKXOR2X2)                                      0.21       4.18 f
+  out_n[5] (out)                                          0.00       4.18 f
+  data arrival time                                                  4.18
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

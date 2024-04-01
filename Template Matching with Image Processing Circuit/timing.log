@@ -1,0 +1,139 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TMIP
+Version: T-2022.03
+Date   : Tue Mar 26 19:44:46 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: img_size_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MATCHING_TEMPLATE_POSITION_reg[4][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  img_size_reg_reg[0]/CK (DFFRX1)                         0.00 #     0.00 r
+  img_size_reg_reg[0]/Q (DFFRX1)                          0.56       0.56 f
+  add_1_root_add_670_2/B[0] (TMIP_DW01_add_0)             0.00       0.56 f
+  add_1_root_add_670_2/U1_0/CO (ADDFXL)                   0.63       1.20 f
+  add_1_root_add_670_2/U1_1/CO (ADDFXL)                   0.37       1.56 f
+  add_1_root_add_670_2/U1_2/CO (ADDFHX1)                  0.25       1.81 f
+  add_1_root_add_670_2/U1_3/CO (ADDFXL)                   0.36       2.17 f
+  add_1_root_add_670_2/U1_4/CO (ADDFXL)                   0.36       2.54 f
+  add_1_root_add_670_2/U1/Y (CLKINVX1)                    0.08       2.61 r
+  add_1_root_add_670_2/U7/Y (NAND2BX1)                    0.14       2.76 r
+  add_1_root_add_670_2/U2/Y (NOR2XL)                      0.07       2.83 f
+  add_1_root_add_670_2/U6/Y (CLKINVX1)                    0.05       2.88 r
+  add_1_root_add_670_2/U5/Y (XNOR2X1)                     0.17       3.05 r
+  add_1_root_add_670_2/SUM[7] (TMIP_DW01_add_0)           0.00       3.05 r
+  U23669/Y (INVX1)                                        0.12       3.17 f
+  U61139/Y (NOR2X1)                                       0.12       3.29 r
+  U27244/Y (AND2XL)                                       0.43       3.72 r
+  U19997/Y (AO22XL)                                       0.27       3.98 r
+  U19910/Y (AOI221X1)                                     0.07       4.05 f
+  U22256/Y (NAND4XL)                                      0.13       4.18 r
+  U68911/Y (AND2X1)                                       0.19       4.37 r
+  mult_561_I9/b[0] (TMIP_DW_mult_tc_0)                    0.00       4.37 r
+  mult_561_I9/U519/Y (BUFX6)                              0.14       4.52 r
+  mult_561_I9/U650/Y (CLKINVX1)                           0.14       4.66 f
+  mult_561_I9/U701/Y (NOR2X1)                             0.11       4.77 r
+  mult_561_I9/U495/S (ADDFXL)                             0.70       5.47 f
+  mult_561_I9/U496/CO (ADDFHX1)                           0.43       5.89 f
+  mult_561_I9/U506/CO (ADDFHX2)                           0.19       6.08 f
+  mult_561_I9/U76/CO (ADDFXL)                             0.35       6.43 f
+  mult_561_I9/U75/CO (ADDFXL)                             0.38       6.81 f
+  mult_561_I9/U74/CO (ADDFXL)                             0.38       7.19 f
+  mult_561_I9/U73/CO (ADDFXL)                             0.38       7.56 f
+  mult_561_I9/U72/CO (ADDFXL)                             0.39       7.95 f
+  mult_561_I9/U497/CO (ADDFX2)                            0.31       8.26 f
+  mult_561_I9/U498/CO (ADDFHX1)                           0.24       8.50 f
+  mult_561_I9/U69/CO (ADDFXL)                             0.36       8.86 f
+  mult_561_I9/U68/CO (ADDFXL)                             0.38       9.23 f
+  mult_561_I9/U67/CO (ADDFXL)                             0.38       9.61 f
+  mult_561_I9/U66/CO (ADDFXL)                             0.38       9.99 f
+  mult_561_I9/U65/CO (ADDFXL)                             0.39      10.38 f
+  mult_561_I9/U505/CO (ADDFHX2)                           0.22      10.60 f
+  mult_561_I9/U502/Y (NAND2X1)                            0.08      10.68 r
+  mult_561_I9/U504/Y (NAND3X1)                            0.10      10.78 f
+  mult_561_I9/U507/CO (ADDFHX2)                           0.19      10.97 f
+  mult_561_I9/U61/CO (ADDFXL)                             0.35      11.32 f
+  mult_561_I9/U60/CO (ADDFXL)                             0.38      11.70 f
+  mult_561_I9/U59/CO (ADDFXL)                             0.38      12.08 f
+  mult_561_I9/U58/CO (ADDFXL)                             0.38      12.45 f
+  mult_561_I9/U57/CO (ADDFXL)                             0.39      12.84 f
+  mult_561_I9/U509/CO (ADDFX1)                            0.29      13.13 f
+  mult_561_I9/U508/S (ADDFHX2)                            0.24      13.38 r
+  mult_561_I9/product[27] (TMIP_DW_mult_tc_0)             0.00      13.38 r
+  add_3_root_add_566_8/A[27] (TMIP_DW01_add_261_DW01_add_267)
+                                                          0.00      13.38 r
+  add_3_root_add_566_8/U1_27/S (ADDFXL)                   0.53      13.91 f
+  add_3_root_add_566_8/SUM[27] (TMIP_DW01_add_261_DW01_add_267)
+                                                          0.00      13.91 f
+  add_1_root_add_566_8/B[27] (TMIP_DW01_add_259_DW01_add_265)
+                                                          0.00      13.91 f
+  add_1_root_add_566_8/U1_27/S (ADDFXL)                   0.72      14.63 f
+  add_1_root_add_566_8/SUM[27] (TMIP_DW01_add_259_DW01_add_265)
+                                                          0.00      14.63 f
+  add_0_root_add_566_8/B[27] (TMIP_DW01_add_258_DW01_add_264)
+                                                          0.00      14.63 f
+  add_0_root_add_566_8/U1_27/CO (ADDFX1)                  0.42      15.05 f
+  add_0_root_add_566_8/U1_28/CO (ADDFX1)                  0.28      15.33 f
+  add_0_root_add_566_8/U1_29/CO (ADDFX2)                  0.30      15.63 f
+  add_0_root_add_566_8/U1_30/CO (ADDFHX1)                 0.25      15.87 f
+  add_0_root_add_566_8/U1_31/CO (ADDFHX2)                 0.19      16.07 f
+  add_0_root_add_566_8/U1_32/CO (ADDFX2)                  0.29      16.36 f
+  add_0_root_add_566_8/U1_33/CO (ADDFX2)                  0.31      16.67 f
+  add_0_root_add_566_8/U1_34/CO (ADDFHX2)                 0.20      16.87 f
+  add_0_root_add_566_8/U1_35/CO (ADDFHX2)                 0.19      17.05 f
+  add_0_root_add_566_8/U1_36/CO (ADDFHX2)                 0.19      17.24 f
+  add_0_root_add_566_8/U1_37/CO (ADDFHX2)                 0.19      17.43 f
+  add_0_root_add_566_8/U1_38/CO (ADDFHX2)                 0.19      17.62 f
+  add_0_root_add_566_8/U1_39/Y (XOR3X2)                   0.25      17.87 f
+  add_0_root_add_566_8/SUM[39] (TMIP_DW01_add_258_DW01_add_264)
+                                                          0.00      17.87 f
+  r5407/A[39] (TMIP_DW_cmp_49)                            0.00      17.87 f
+  r5407/U216/Y (NOR2BX4)                                  0.10      17.97 r
+  r5407/U219/Y (OAI32X2)                                  0.15      18.12 f
+  r5407/U220/Y (OAI32X2)                                  0.21      18.34 r
+  r5407/GE_LT_GT_LE (TMIP_DW_cmp_49)                      0.00      18.34 r
+  U20001/Y (NAND2X2)                                      0.13      18.47 f
+  U20078/Y (NOR2X4)                                       0.15      18.62 r
+  U22011/Y (INVX6)                                        0.09      18.71 f
+  U1077/Y (OAI21X4)                                       0.10      18.81 r
+  U27223/Y (BUFX6)                                        0.11      18.92 r
+  U42112/Y (NAND2BX1)                                     0.16      19.07 r
+  U20051/Y (BUFX8)                                        0.14      19.21 r
+  U20050/Y (NAND3XL)                                      0.09      19.30 f
+  U20048/Y (INVX1)                                        0.11      19.41 r
+  U20049/Y (CLKINVX4)                                     0.10      19.51 f
+  U22104/Y (OR2XL)                                        0.23      19.74 f
+  U22105/Y (NAND3X1)                                      0.10      19.84 r
+  MATCHING_TEMPLATE_POSITION_reg[4][0]/D (DFFRX2)         0.00      19.84 r
+  data arrival time                                                 19.84
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  MATCHING_TEMPLATE_POSITION_reg[4][0]/CK (DFFRX2)        0.00      20.00 r
+  library setup time                                     -0.16      19.84
+  data required time                                                19.84
+  --------------------------------------------------------------------------
+  data required time                                                19.84
+  data arrival time                                                -19.84
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
