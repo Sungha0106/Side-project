@@ -730,10 +730,10 @@ begin
     else if(state == GO)
         out_valid <= 1'b0;
 end
+    
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //out_valid
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// assign cost =  (state == DONE)?(done)? 4'b1 :(possible)? cost_last : 4'd0 : 4'd0 ;
 always @(posedge clk or negedge rst_n)
 begin
     if(!rst_n)
@@ -750,6 +750,5 @@ begin
     else if(state == GO)
         cost <= 4'd0;
 end
-
 
 endmodule
