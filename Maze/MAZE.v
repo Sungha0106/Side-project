@@ -1,4 +1,3 @@
-
 module MAZE( clk, rst_n, in_valid, in, out_valid, out);
 input clk;
 input rst_n;
@@ -226,53 +225,6 @@ begin
 end
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//SOLVE_MAZE
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// //x_solvek
-// always @(posedge clk or negedge rst_n)
-// begin
-//     if(!rst_n)
-//         x_solve <= 5'd1;
-//     else if(state == SOLVE_MAZE)
-//     begin
-//         case(out)
-//             2'b00 :
-//                 x_solve <= x_solve;
-//             2'b01 :
-//                 x_solve <= x_solve + 5'd1;
-//             2'b10 :
-//                 x_solve <= x_solve ;
-//             2'b11 :
-//                 x_solve <= x_solve - 5'd1;
-//         endcase
-//     end
-//     else if(state == DONE)
-//         x_solve <= 5'd1;
-// end
-
-// //y_solve
-// always @(posedge clk or negedge rst_n)
-// begin
-//     if(!rst_n)
-//         y_solve <= 5'd1;
-//     else if(state == SOLVE_MAZE)
-//     begin
-//         case(out)
-//             2'b00 :
-//                 y_solve <= y_solve + 5'd1;
-//             2'b01 :
-//                 y_solve <= y_solve;
-//             2'b10 :
-//                 y_solve <= y_solve - 5'd1;
-//             2'b11 :
-//                 y_solve <= y_solve;
-//         endcase
-//     end
-//     else if(state == DONE)
-//         y_solve <= 5'd1;
-// end
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //out
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //      out_w
@@ -303,6 +255,7 @@ begin
             out <= out_w;
     end
 end
+    
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //out_valid
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
