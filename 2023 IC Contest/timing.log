@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LASER
+Version: T-2022.03
+Date   : Thu Jan 18 17:31:39 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: counter1_reg[3]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: C1X_COUNT2_reg[2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LASER              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  counter1_reg[3]/CK (DFFRX2)              0.00       0.50 r
+  counter1_reg[3]/Q (DFFRX2)               0.76       1.26 r
+  U2167/Y (NAND2X6)                        0.16       1.42 f
+  U2600/Y (NAND2XL)                        0.52       1.94 r
+  U3284/Y (OAI2BB2X2)                      0.47       2.41 r
+  U3285/Y (INVX8)                          0.18       2.59 f
+  U3286/Y (NOR2X1)                         0.36       2.95 r
+  U3292/Y (NOR2BX1)                        0.64       3.60 r
+  U3293/Y (INVX4)                          0.28       3.88 f
+  U2465/Y (OAI22XL)                        0.55       4.43 r
+  U2169/Y (AOI211X1)                       0.32       4.75 f
+  U3383/Y (NOR2X1)                         0.55       5.29 r
+  U3429/Y (OAI21XL)                        0.41       5.70 f
+  U3430/Y (OA21X2)                         0.45       6.15 f
+  U3431/Y (AOI222X4)                       0.62       6.77 r
+  U2069/Y (INVX3)                          0.10       6.87 f
+  U3520/Y (AOI2BB2X1)                      0.36       7.23 f
+  U3521/Y (AOI2BB2X1)                      0.37       7.60 f
+  U2404/Y (OAI22XL)                        0.49       8.09 r
+  C1X_COUNT2_reg[2]/D (DFFRX1)             0.00       8.09 r
+  data arrival time                                   8.09
+
+  clock CLK (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.50       8.50
+  clock uncertainty                       -0.10       8.40
+  C1X_COUNT2_reg[2]/CK (DFFRX1)            0.00       8.40 r
+  library setup time                      -0.30       8.10
+  data required time                                  8.10
+  -----------------------------------------------------------
+  data required time                                  8.10
+  data arrival time                                  -8.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

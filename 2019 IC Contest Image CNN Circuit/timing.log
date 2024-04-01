@@ -1,0 +1,89 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: T-2022.03
+Date   : Sat Feb  3 23:17:55 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: idata[8] (input port clocked by clk)
+  Endpoint: convolution_reg[32]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 f
+  idata[8] (in)                                           0.11       5.61 f
+  r1776/a[8] (CONV_DW_mult_tc_41)                         0.00       5.61 f
+  r1776/U478/Y (INVX4)                                    0.13       5.74 r
+  r1776/U482/CO (ADDFHX2)                                 0.40       6.15 r
+  r1776/U839/CO (ADDFHX4)                                 0.19       6.34 r
+  r1776/U363/S (ADDFHX4)                                  0.27       6.60 r
+  r1776/U362/S (ADDFHX4)                                  0.34       6.95 r
+  r1776/U505/Y (NOR2X8)                                   0.12       7.07 f
+  r1776/U463/Y (NOR2X6)                                   0.11       7.17 r
+  r1776/U629/Y (NAND2X6)                                  0.07       7.24 f
+  r1776/U499/Y (OR2X8)                                    0.15       7.39 f
+  r1776/U627/Y (NAND2X8)                                  0.09       7.48 r
+  r1776/U466/Y (INVX16)                                   0.07       7.56 f
+  r1776/U623/Y (OR2X8)                                    0.15       7.71 f
+  r1776/U624/Y (NAND2X6)                                  0.06       7.76 r
+  r1776/U556/Y (XOR2X4)                                   0.17       7.94 r
+  r1776/product[20] (CONV_DW_mult_tc_41)                  0.00       7.94 r
+  r1777/B[20] (CONV_DW01_add_58)                          0.00       7.94 r
+  r1777/U506/Y (NOR2X8)                                   0.14       8.08 f
+  r1777/U424/Y (NOR2X8)                                   0.15       8.22 r
+  r1777/U423/Y (NAND2X6)                                  0.07       8.30 f
+  r1777/U422/Y (OR2X8)                                    0.17       8.47 f
+  r1777/U421/Y (NAND2X8)                                  0.12       8.58 r
+  r1777/U434/Y (NAND2X8)                                  0.08       8.66 f
+  r1777/U438/Y (NAND2X6)                                  0.06       8.72 r
+  r1777/U437/Y (XOR2X4)                                   0.13       8.86 r
+  r1777/SUM[24] (CONV_DW01_add_58)                        0.00       8.86 r
+  U4220/Y (BUFX20)                                        0.15       9.00 r
+  r1785/B[24] (CONV_DW01_add_57)                          0.00       9.00 r
+  r1785/U191/Y (NAND2X8)                                  0.05       9.06 f
+  r1785/U185/Y (OR2X8)                                    0.17       9.23 f
+  r1785/U184/Y (NAND2X8)                                  0.08       9.31 r
+  r1785/U192/Y (OAI2BB1X4)                                0.19       9.51 r
+  r1785/U194/Y (INVX12)                                   0.08       9.59 f
+  r1785/U201/Y (INVX16)                                   0.06       9.65 r
+  r1785/U204/Y (NAND2X6)                                  0.05       9.70 f
+  r1785/U203/Y (XOR2X4)                                   0.15       9.85 r
+  r1785/SUM[32] (CONV_DW01_add_57)                        0.00       9.85 r
+  U4231/Y (NAND2X6)                                       0.10       9.95 f
+  U4225/Y (NAND4BX4)                                      0.12      10.07 r
+  U4222/Y (AOI2BB2X4)                                     0.16      10.23 r
+  U4243/Y (NOR4BX4)                                       0.12      10.35 f
+  U4244/Y (AOI32X2)                                       0.21      10.56 r
+  convolution_reg[32]/D (DFFRX4)                          0.00      10.56 r
+  data arrival time                                                 10.56
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  convolution_reg[32]/CK (DFFRX4)                         0.00      10.40 r
+  library setup time                                     -0.21      10.19
+  data required time                                                10.19
+  --------------------------------------------------------------------------
+  data required time                                                10.19
+  data arrival time                                                -10.56
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.37
+
+
+1

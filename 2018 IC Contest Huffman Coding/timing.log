@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : huffman
+Version: T-2022.03
+Date   : Sun Jan 28 20:25:21 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: INITIALIZATION_reg_reg[1][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: INITIALIZATION_number_reg[2][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  huffman            tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  INITIALIZATION_reg_reg[1][0]/CK (DFFRX1)                0.00       0.50 r
+  INITIALIZATION_reg_reg[1][0]/Q (DFFRX1)                 0.96       1.46 r
+  U3571/Y (OAI22XL)                                       0.35       1.82 f
+  U2479/Y (OAI221XL)                                      0.35       2.17 r
+  U2418/Y (AOI32XL)                                       0.37       2.54 f
+  U3568/Y (AOI222XL)                                      0.71       3.25 r
+  U3566/Y (OAI32X1)                                       0.33       3.58 f
+  U2621/Y (AOI22X2)                                       0.60       4.18 r
+  U3540/Y (CLKINVX1)                                      0.44       4.62 f
+  U3539/Y (OAI21XL)                                       0.77       5.40 r
+  U2830/Y (NOR4BXL)                                       0.36       5.76 f
+  U2643/Y (OAI221X1)                                      0.83       6.59 r
+  U3421/Y (CLKINVX1)                                      0.41       7.00 f
+  U3420/Y (OAI31XL)                                       0.55       7.55 r
+  U3415/Y (CLKINVX1)                                      0.43       7.98 f
+  U3414/Y (OAI22XL)                                       0.56       8.53 r
+  U3412/Y (OR3X1)                                         0.29       8.83 r
+  INITIALIZATION_number_reg[2][7]/D (DFFRX1)              0.00       8.83 r
+  data arrival time                                                  8.83
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  INITIALIZATION_number_reg[2][7]/CK (DFFRX1)             0.00      10.40 r
+  library setup time                                     -0.25      10.15
+  data required time                                                10.15
+  --------------------------------------------------------------------------
+  data required time                                                10.15
+  data arrival time                                                 -8.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.33
+
+
+1
