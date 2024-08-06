@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : CONV
 Version: T-2022.03
-Date   : Sat Feb  3 23:17:57 2024
+Date   : Tue Aug  6 19:51:46 2024
 ****************************************
 
 
@@ -39,12 +39,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =   6.6600 mW   (43%)
-  Net Switching Power  =   8.9879 mW   (57%)
+  Cell Internal Power  = 631.3155 uW   (51%)
+  Net Switching Power  = 618.6902 uW   (49%)
                          ---------
-Total Dynamic Power    =  15.6479 mW  (100%)
+Total Dynamic Power    =   1.2500 mW  (100%)
 
-Cell Leakage Power     = 307.6858 uW
+Cell Leakage Power     =  46.6670 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -53,10 +53,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.2978            0.0000            0.0000            0.0000  (   0.00%)  i
-register       1.5405e-02        4.5797e-02        3.9461e+06            0.3629  (   2.27%)
+clock_network      0.3121            0.0000            0.0000            0.0000  (   0.00%)  i
+register       1.4390e-02        2.8195e-02        4.2293e+06            0.3589  (  27.68%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      6.3469            8.9421        3.0374e+08           15.5927  (  97.73%)
+combinational      0.3049            0.5905        4.2438e+07            0.9378  (  72.32%)
 --------------------------------------------------------------------------------------------------
-Total              6.6600 mW         8.9879 mW     3.0769e+08 pW        15.9556 mW
+Total              0.6313 mW         0.6187 mW     4.6667e+07 pW         1.2967 mW
 1
