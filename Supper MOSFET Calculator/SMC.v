@@ -142,9 +142,5 @@ assign a = (mode[0]) ? i_0 : n_0;
 assign b = (mode[0]) ? i_1 : n_1;
 assign c = (mode[0]) ? i_2 : n_2;
 assign out_n = a + b + c;
-// 面積比較大 但這反而比較快?
-// assign a = (mode[0]) ? i_0 : (mode[1])? I_0 : J_2;
-// assign b = (mode[0]) ? i_1 : (mode[1])? J_0 : J_3;
-// assign c = (mode[0]) ? i_2 : (mode[1])? J_1 : I_5;
-// assign out_n = a + b + c;
+
 endmodule
