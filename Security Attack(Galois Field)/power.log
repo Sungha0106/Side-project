@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : GF_IA
+Version: T-2022.03
+Date   : Fri May  3 10:40:34 2024
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /usr/cad/Design_Kit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+GF_IA                  tsmc13_wl10       slow
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 204.3013 uW   (55%)
+  Net Switching Power  = 164.8494 uW   (45%)
+                         ---------
+Total Dynamic Power    = 369.1507 uW  (100%)
+
+Cell Leakage Power     =  31.0264 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.1415            0.0000            0.0000            0.0000  (   0.00%)  i
+register       5.0500e-03        1.0683e-02        1.6379e+06            0.1588  (  39.69%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.7778e-02            0.1542        2.9388e+07            0.2413  (  60.31%)
+--------------------------------------------------------------------------------------------------
+Total              0.2043 mW         0.1648 mW     3.1026e+07 pW         0.4002 mW
+1
