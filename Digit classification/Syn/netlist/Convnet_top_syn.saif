@@ -1,0 +1,12 @@
+(SAIFILE
+(SAIFVERSION "2.0")
+(DIRECTION "backward")
+(DESIGN "Convnet_top")
+(DATE "Sat Sep 14 22:56:46 2024")
+(VENDOR "Synopsys, Inc")
+(PROGRAM_NAME "Power Compiler write_saif")
+(PROGRAM_VERSION "T-2022.03")
+(DIVIDER / )
+(TIMESCALE 1 ns)
+(DURATION 1000.00)
+)

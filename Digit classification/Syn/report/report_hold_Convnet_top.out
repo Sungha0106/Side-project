@@ -1,0 +1,141 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 4
+Design : Convnet_top
+Version: T-2022.03
+Date   : Sat Sep 14 22:56:46 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: enclosed
+
+  Startpoint: clk_gate_BIAS_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_BIAS_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_BIAS_reg/latch/GN (TLATNX1)                    0.00 #     5.00 f
+  clk_gate_BIAS_reg/latch/Q (TLATNX1)                     0.21       5.21 r
+  clk_gate_BIAS_reg/main_gate/A (AND2X1)                  0.00       5.21 r
+  data arrival time                                                  5.21
+
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_BIAS_reg/main_gate/B (AND2X1)                  0.00       5.00 f
+  clock gating hold time                                  0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -5.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: clk_gate_CONV_1_bank_horiz_change_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_CONV_1_bank_horiz_change_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_CONV_1_bank_horiz_change_reg/latch/GN (TLATNX1)
+                                                          0.00 #     5.00 f
+  clk_gate_CONV_1_bank_horiz_change_reg/latch/Q (TLATNX1)
+                                                          0.21       5.21 r
+  clk_gate_CONV_1_bank_horiz_change_reg/main_gate/A (AND2X1)
+                                                          0.00       5.21 r
+  data arrival time                                                  5.21
+
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_CONV_1_bank_horiz_change_reg/main_gate/B (AND2X1)
+                                                          0.00       5.00 f
+  clock gating hold time                                  0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -5.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: clk_gate_CONV_1_bank_verti_store_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_CONV_1_bank_verti_store_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_CONV_1_bank_verti_store_reg/latch/GN (TLATNX1)
+                                                          0.00 #     5.00 f
+  clk_gate_CONV_1_bank_verti_store_reg/latch/Q (TLATNX1)
+                                                          0.21       5.21 r
+  clk_gate_CONV_1_bank_verti_store_reg/main_gate/A (AND2X1)
+                                                          0.00       5.21 r
+  data arrival time                                                  5.21
+
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_CONV_1_bank_verti_store_reg/main_gate/B (AND2X1)
+                                                          0.00       5.00 f
+  clock gating hold time                                  0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -5.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: clk_gate_CONV_1_bank_horiz_store_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_CONV_1_bank_horiz_store_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_CONV_1_bank_horiz_store_reg/latch/GN (TLATNX1)
+                                                          0.00 #     5.00 f
+  clk_gate_CONV_1_bank_horiz_store_reg/latch/Q (TLATNX1)
+                                                          0.21       5.21 r
+  clk_gate_CONV_1_bank_horiz_store_reg/main_gate/A (AND2X1)
+                                                          0.00       5.21 r
+  data arrival time                                                  5.21
+
+  clock clk (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clk_gate_CONV_1_bank_horiz_store_reg/main_gate/B (AND2X1)
+                                                          0.00       5.00 f
+  clock gating hold time                                  0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -5.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+1

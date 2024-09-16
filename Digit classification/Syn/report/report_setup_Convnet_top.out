@@ -1,0 +1,285 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 4
+Design : Convnet_top
+Version: T-2022.03
+Date   : Sat Sep 14 22:56:46 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: enclosed
+
+  Startpoint: CONV_1_Store_Count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CONV_3_output_reg_reg_0__0__0__14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CONV_1_Store_Count_reg_1_/CK (DFFQX2)                   0.00       0.00 r
+  CONV_1_Store_Count_reg_1_/Q (DFFQX2)                    0.30       0.30 r
+  U17775/Y (INVX1)                                        0.07       0.37 f
+  U14057/Y (NAND2X1)                                      0.13       0.50 r
+  U14149/Y (INVX3)                                        0.15       0.64 f
+  U12800/Y (INVX4)                                        0.12       0.77 r
+  U14020/Y (INVX2)                                        0.15       0.91 f
+  U18145/Y (AO22X1)                                       0.28       1.19 f
+  U16172/Y (AOI211XL)                                     0.61       1.79 r
+  U18174/Y (OAI22XL)                                      0.15       1.94 f
+  U17027/Y (NOR4XL)                                       0.29       2.23 r
+  U13045/Y (NAND2XL)                                      0.21       2.44 f
+  U17040/Y (XNOR2X1)                                      0.21       2.65 f
+  U12696/Y (OAI22XL)                                      0.25       2.90 r
+  U12685/CO (ADDFXL)                                      0.68       3.58 r
+  U15901/S (ADDFXL)                                       0.54       4.12 r
+  U14692/CO (ADDFXL)                                      0.67       4.79 r
+  U13349/CO (ADDFX1)                                      0.46       5.25 r
+  U13757/CO (ADDFX1)                                      0.24       5.49 r
+  U13342/S (ADDFX1)                                       0.29       5.78 r
+  U13336/S (ADDFX1)                                       0.44       6.22 f
+  U15089/CO (ADDFX2)                                      0.33       6.55 f
+  U13321/CO (ADDFX1)                                      0.29       6.84 f
+  U13484/S (ADDFX1)                                       0.45       7.29 f
+  U13311/Y (NOR2X1)                                       0.14       7.43 r
+  U13148/Y (OAI21XL)                                      0.09       7.52 f
+  U12824/Y (AOI21XL)                                      0.15       7.67 r
+  U13286/Y (OAI21X1)                                      0.15       7.83 f
+  U13694/Y (AOI21X1)                                      0.14       7.97 r
+  U13218/Y (XOR2X1)                                       0.20       8.17 f
+  U16999/Y (OR2X2)                                        0.23       8.40 f
+  U13685/Y (AOI21X1)                                      0.12       8.51 r
+  U13683/Y (OAI21X1)                                      0.10       8.61 f
+  U14124/Y (AOI21X1)                                      0.13       8.74 r
+  U14197/Y (XOR2X1)                                       0.12       8.86 r
+  U27016/Y (NOR2BX1)                                      0.10       8.97 f
+  U13169/Y (CLKINVX1)                                     0.07       9.04 r
+  U12827/Y (INVX3)                                        0.09       9.13 f
+  U12611/Y (AO22X1)                                       0.36       9.49 f
+  U12825/Y (CLKINVX2)                                     0.09       9.58 r
+  U15196/Y (CLKINVX1)                                     0.14       9.72 f
+  CONV_3_output_reg_reg_0__0__0__14_/D (DFFQX1)           0.00       9.72 f
+  data arrival time                                                  9.72
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  CONV_3_output_reg_reg_0__0__0__14_/CK (DFFQX1)          0.00      10.00 r
+  library setup time                                     -0.28       9.72
+  data required time                                                 9.72
+  --------------------------------------------------------------------------
+  data required time                                                 9.72
+  data arrival time                                                 -9.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: CONV_1_Store_Count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CONV_3_output_reg_reg_0__0__2__14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CONV_1_Store_Count_reg_1_/CK (DFFQX2)                   0.00       0.00 r
+  CONV_1_Store_Count_reg_1_/Q (DFFQX2)                    0.30       0.30 r
+  U17775/Y (INVX1)                                        0.07       0.37 f
+  U14057/Y (NAND2X1)                                      0.13       0.50 r
+  U14149/Y (INVX3)                                        0.15       0.64 f
+  U12800/Y (INVX4)                                        0.12       0.77 r
+  U14020/Y (INVX2)                                        0.15       0.91 f
+  U18145/Y (AO22X1)                                       0.28       1.19 f
+  U16172/Y (AOI211XL)                                     0.61       1.79 r
+  U18174/Y (OAI22XL)                                      0.15       1.94 f
+  U17027/Y (NOR4XL)                                       0.29       2.23 r
+  U13045/Y (NAND2XL)                                      0.21       2.44 f
+  U17040/Y (XNOR2X1)                                      0.21       2.65 f
+  U12696/Y (OAI22XL)                                      0.25       2.90 r
+  U12685/CO (ADDFXL)                                      0.68       3.58 r
+  U15901/S (ADDFXL)                                       0.54       4.12 r
+  U14692/CO (ADDFXL)                                      0.67       4.79 r
+  U13349/CO (ADDFX1)                                      0.46       5.25 r
+  U13757/CO (ADDFX1)                                      0.24       5.49 r
+  U13342/S (ADDFX1)                                       0.29       5.78 r
+  U13336/S (ADDFX1)                                       0.44       6.22 f
+  U15089/CO (ADDFX2)                                      0.33       6.55 f
+  U13321/CO (ADDFX1)                                      0.29       6.84 f
+  U13484/S (ADDFX1)                                       0.45       7.29 f
+  U13311/Y (NOR2X1)                                       0.14       7.43 r
+  U13148/Y (OAI21XL)                                      0.09       7.52 f
+  U12824/Y (AOI21XL)                                      0.15       7.67 r
+  U13286/Y (OAI21X1)                                      0.15       7.83 f
+  U13694/Y (AOI21X1)                                      0.14       7.97 r
+  U13218/Y (XOR2X1)                                       0.20       8.17 f
+  U16999/Y (OR2X2)                                        0.23       8.40 f
+  U13685/Y (AOI21X1)                                      0.12       8.51 r
+  U13683/Y (OAI21X1)                                      0.10       8.61 f
+  U14124/Y (AOI21X1)                                      0.13       8.74 r
+  U14197/Y (XOR2X1)                                       0.12       8.86 r
+  U27016/Y (NOR2BX1)                                      0.10       8.97 f
+  U13169/Y (CLKINVX1)                                     0.07       9.04 r
+  U12827/Y (INVX3)                                        0.09       9.13 f
+  U12611/Y (AO22X1)                                       0.36       9.49 f
+  U12825/Y (CLKINVX2)                                     0.09       9.58 r
+  U15196/Y (CLKINVX1)                                     0.14       9.72 f
+  CONV_3_output_reg_reg_0__0__2__14_/D (DFFQX1)           0.00       9.72 f
+  data arrival time                                                  9.72
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  CONV_3_output_reg_reg_0__0__2__14_/CK (DFFQX1)          0.00      10.00 r
+  library setup time                                     -0.28       9.72
+  data required time                                                 9.72
+  --------------------------------------------------------------------------
+  data required time                                                 9.72
+  data arrival time                                                 -9.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: CONV_1_Store_Count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CONV_3_output_reg_reg_0__0__3__14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CONV_1_Store_Count_reg_1_/CK (DFFQX2)                   0.00       0.00 r
+  CONV_1_Store_Count_reg_1_/Q (DFFQX2)                    0.30       0.30 r
+  U17775/Y (INVX1)                                        0.07       0.37 f
+  U14057/Y (NAND2X1)                                      0.13       0.50 r
+  U14149/Y (INVX3)                                        0.15       0.64 f
+  U12800/Y (INVX4)                                        0.12       0.77 r
+  U14020/Y (INVX2)                                        0.15       0.91 f
+  U18145/Y (AO22X1)                                       0.28       1.19 f
+  U16172/Y (AOI211XL)                                     0.61       1.79 r
+  U18174/Y (OAI22XL)                                      0.15       1.94 f
+  U17027/Y (NOR4XL)                                       0.29       2.23 r
+  U13045/Y (NAND2XL)                                      0.21       2.44 f
+  U17040/Y (XNOR2X1)                                      0.21       2.65 f
+  U12696/Y (OAI22XL)                                      0.25       2.90 r
+  U12685/CO (ADDFXL)                                      0.68       3.58 r
+  U15901/S (ADDFXL)                                       0.54       4.12 r
+  U14692/CO (ADDFXL)                                      0.67       4.79 r
+  U13349/CO (ADDFX1)                                      0.46       5.25 r
+  U13757/CO (ADDFX1)                                      0.24       5.49 r
+  U13342/S (ADDFX1)                                       0.29       5.78 r
+  U13336/S (ADDFX1)                                       0.44       6.22 f
+  U15089/CO (ADDFX2)                                      0.33       6.55 f
+  U13321/CO (ADDFX1)                                      0.29       6.84 f
+  U13484/S (ADDFX1)                                       0.45       7.29 f
+  U13311/Y (NOR2X1)                                       0.14       7.43 r
+  U13148/Y (OAI21XL)                                      0.09       7.52 f
+  U12824/Y (AOI21XL)                                      0.15       7.67 r
+  U13286/Y (OAI21X1)                                      0.15       7.83 f
+  U13694/Y (AOI21X1)                                      0.14       7.97 r
+  U13218/Y (XOR2X1)                                       0.20       8.17 f
+  U16999/Y (OR2X2)                                        0.23       8.40 f
+  U13685/Y (AOI21X1)                                      0.12       8.51 r
+  U13683/Y (OAI21X1)                                      0.10       8.61 f
+  U14124/Y (AOI21X1)                                      0.13       8.74 r
+  U14197/Y (XOR2X1)                                       0.12       8.86 r
+  U27016/Y (NOR2BX1)                                      0.10       8.97 f
+  U13169/Y (CLKINVX1)                                     0.07       9.04 r
+  U12827/Y (INVX3)                                        0.09       9.13 f
+  U12611/Y (AO22X1)                                       0.36       9.49 f
+  U12825/Y (CLKINVX2)                                     0.09       9.58 r
+  U15195/Y (CLKINVX1)                                     0.14       9.72 f
+  CONV_3_output_reg_reg_0__0__3__14_/D (DFFQX1)           0.00       9.72 f
+  data arrival time                                                  9.72
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  CONV_3_output_reg_reg_0__0__3__14_/CK (DFFQX1)          0.00      10.00 r
+  library setup time                                     -0.28       9.72
+  data required time                                                 9.72
+  --------------------------------------------------------------------------
+  data required time                                                 9.72
+  data arrival time                                                 -9.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: CONV_1_Store_Count_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CONV_3_output_reg_reg_0__0__5__14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CONV_1_Store_Count_reg_1_/CK (DFFQX2)                   0.00       0.00 r
+  CONV_1_Store_Count_reg_1_/Q (DFFQX2)                    0.30       0.30 r
+  U17775/Y (INVX1)                                        0.07       0.37 f
+  U14057/Y (NAND2X1)                                      0.13       0.50 r
+  U14149/Y (INVX3)                                        0.15       0.64 f
+  U12800/Y (INVX4)                                        0.12       0.77 r
+  U14020/Y (INVX2)                                        0.15       0.91 f
+  U18145/Y (AO22X1)                                       0.28       1.19 f
+  U16172/Y (AOI211XL)                                     0.61       1.79 r
+  U18174/Y (OAI22XL)                                      0.15       1.94 f
+  U17027/Y (NOR4XL)                                       0.29       2.23 r
+  U13045/Y (NAND2XL)                                      0.21       2.44 f
+  U17040/Y (XNOR2X1)                                      0.21       2.65 f
+  U12696/Y (OAI22XL)                                      0.25       2.90 r
+  U12685/CO (ADDFXL)                                      0.68       3.58 r
+  U15901/S (ADDFXL)                                       0.54       4.12 r
+  U14692/CO (ADDFXL)                                      0.67       4.79 r
+  U13349/CO (ADDFX1)                                      0.46       5.25 r
+  U13757/CO (ADDFX1)                                      0.24       5.49 r
+  U13342/S (ADDFX1)                                       0.29       5.78 r
+  U13336/S (ADDFX1)                                       0.44       6.22 f
+  U15089/CO (ADDFX2)                                      0.33       6.55 f
+  U13321/CO (ADDFX1)                                      0.29       6.84 f
+  U13484/S (ADDFX1)                                       0.45       7.29 f
+  U13311/Y (NOR2X1)                                       0.14       7.43 r
+  U13148/Y (OAI21XL)                                      0.09       7.52 f
+  U12824/Y (AOI21XL)                                      0.15       7.67 r
+  U13286/Y (OAI21X1)                                      0.15       7.83 f
+  U13694/Y (AOI21X1)                                      0.14       7.97 r
+  U13218/Y (XOR2X1)                                       0.20       8.17 f
+  U16999/Y (OR2X2)                                        0.23       8.40 f
+  U13685/Y (AOI21X1)                                      0.12       8.51 r
+  U13683/Y (OAI21X1)                                      0.10       8.61 f
+  U14124/Y (AOI21X1)                                      0.13       8.74 r
+  U14197/Y (XOR2X1)                                       0.12       8.86 r
+  U27016/Y (NOR2BX1)                                      0.10       8.97 f
+  U13169/Y (CLKINVX1)                                     0.07       9.04 r
+  U12827/Y (INVX3)                                        0.09       9.13 f
+  U12611/Y (AO22X1)                                       0.36       9.49 f
+  U12825/Y (CLKINVX2)                                     0.09       9.58 r
+  U15195/Y (CLKINVX1)                                     0.14       9.72 f
+  CONV_3_output_reg_reg_0__0__5__14_/D (DFFQX1)           0.00       9.72 f
+  data arrival time                                                  9.72
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  CONV_3_output_reg_reg_0__0__5__14_/CK (DFFQX1)          0.00      10.00 r
+  library setup time                                     -0.28       9.72
+  data required time                                                 9.72
+  --------------------------------------------------------------------------
+  data required time                                                 9.72
+  data arrival time                                                 -9.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
